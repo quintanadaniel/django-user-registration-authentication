@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Jazzmin to add other look and fill to django admin
+    "jazzmin",
+
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,13 +43,14 @@ INSTALLED_APPS = [
 
     "crm",
     "django_admin_logs",
+    "memberships",
 ]
 
 # Admin users can delete logs
 DJANGO_ADMIN_LOGS_DELETABLE = True
 
 # Only admin users can see logs when this option is true.
-DJANGO_ADMIN_LOGS_ENABLED = True
+DJANGO_ADMIN_LOGS_ENABLED = False
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
