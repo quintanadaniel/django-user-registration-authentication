@@ -39,8 +39,15 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "crm",
+    "django_admin_logs",
     "memberships",
 ]
+
+# Admin users can delete logs
+DJANGO_ADMIN_LOGS_DELETABLE = True
+
+# Only admin users can see logs when this option is true.
+DJANGO_ADMIN_LOGS_ENABLED = True
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
